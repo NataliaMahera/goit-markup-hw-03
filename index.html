@@ -10,31 +10,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" 
         rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <!-- Header -->
   <header class="header">
-    <nav class="navigation">
-      <a class="logo link" href="./index.html">Web<span class="studio-logo-theme-light">Studio</span></a>
-      <ul class="menu list">
-        <li class="menu-item" >
-          <a class="menu-item-link link" href="./index.html">Studio</a></li>
-        <li class="menu-item">
-          <a class="menu-item-link link" href="./portfolio.html">Portfolio</a></li>
-        <li class="menu-item">
-          <a class="menu-item-link link" href="">Contacts</a></li>
-      </ul>
-    </nav>
-    <address class="contact">
-      <ul class="contact list">
-        <li class="contact-item">
-          <a class="contact-item-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contact-item">
-          <a class="contact-item-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-      </ul>
-    </address>
+    <div class="container page-header-container">
+      <nav class="navigation">
+        <a class="logo link" href="./index.html">Web<span class="studio-logo-theme-light">Studio</span></a>
+        <ul class="menu list">
+          <li class="menu-item">
+            <a class="menu-item-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+        <ul class="contact list">
+          <li class="contact-item">
+            <a class="contact-item-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-item">
+            <a class="contact-item-link tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+    </div>
   </header>
   
   <main>
@@ -46,7 +52,7 @@
 
     <!-- FEATURES -->
     <section class="features">
-      <h2 class="features-title" hidden>Features</h2>
+      <h2 class="features-title title" hidden>Features</h2>
       <ul class="features-list list">
         <li class="features-list-item">
           <h3 class="subtitle">Strategy</h3>
@@ -81,45 +87,51 @@
 
     <!-- WORK EXAMPLES -->
     <section class="work-examples">
-      <h2 class="work-examples-title">What are we doing</h2>
-      <ul class="work-examples-list list">
-        <li class="work-examples-list-item">
-          <img src="./images/img1.jpg" alt="statistics on the monitor" width="360" height="300" />
-        </li>
-        <li class="work-examples-list-item">
-          <img src="./images/img2.jpg" alt="screenshots of the smartphone" width="360" height="300" />
-        </li>
-        <li class="work-examples-list-item">
-          <img src="./images/img3.jpg" alt="smartphone" width="360" height="300" />
-        </li>
-      </ul>
+      <div class="container">
+          <h2 class="work-examples-title title">What are we doing</h2>
+        <ul class="work-examples-list list">
+          <li class="work-examples-list-item">
+            <img src="./images/img1.jpg" alt="statistics on the monitor" width="360" height="300" />
+          </li>
+          <li class="work-examples-list-item">
+            <img src="./images/img2.jpg" alt="screenshots of the smartphone" width="360" height="300" />
+          </li>
+          <li class="work-examples-list-item">
+            <img src="./images/img3.jpg" alt="smartphone" width="360" height="300" />
+          </li>
+        </ul>
+      </div>
+      
     </section>
 
     <!--TEAM -->
     <section class="team">
-      <h2 class="team-title">Our Team</h2>
-      <ul class="team-list list">
-        <li class="team-list-item">
-          <img src="./images/mark-guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
-          <h3 class="subtitle">Mark Guerrero</h3>
-          <p class="description">Product Designer</p>
-        </li>
-        <li class="team-list-item">
-          <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" height="260" />
-          <h3 class="subtitle">Tom Ford</h3>
-          <p class="description">Frontend Developer</p>
-        </li>
-        <li class="team-list-item">
-          <img src="./images/camila-garcia.jpg" alt="Camila Garcia" width="264" height="260" />
-          <h3 class="subtitle">Camila Garcia</h3>
-          <p class="description">Marketing</p>
-        </li>
-        <li class="team-list-item">
-          <img src="./images/daniel-wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
-          <h3 class="subtitle">Daniel Wilson</h3>
-          <p class="description">UI Designer</p>
-        </li>
-      </ul>
+      <div class="container">
+          <h2 class="team-title title">Our Team</h2>
+        <ul class="team-list list">
+          <li class="team-list-item">
+            <img src="./images/mark-guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
+            <h3 class="subtitle">Mark Guerrero</h3>
+            <p class="description">Product Designer</p>
+          </li>
+          <li class="team-list-item">
+            <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" height="260" />
+            <h3 class="subtitle">Tom Ford</h3>
+            <p class="description">Frontend Developer</p>
+          </li>
+          <li class="team-list-item">
+            <img src="./images/camila-garcia.jpg" alt="Camila Garcia" width="264" height="260" />
+            <h3 class="subtitle">Camila Garcia</h3>
+            <p class="description">Marketing</p>
+          </li>
+          <li class="team-list-item">
+            <img src="./images/daniel-wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
+            <h3 class="subtitle">Daniel Wilson</h3>
+            <p class="description">UI Designer</p>
+          </li>
+        </ul>
+      </div>
+      
     </section>
   </main>
 <!-- FOOTER -->
