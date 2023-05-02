@@ -25,6 +25,7 @@ button {
 h1,
 h2,
 h3,
+h4,
 p {
     margin-top: 0;
     margin-bottom: 0;
@@ -54,6 +55,19 @@ img {
 margin-right: 40px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 body {
 font-family: var(--primary-font);
 color:#434455;
@@ -77,11 +91,14 @@ margin-bottom: 8px;
 }
 
 .desc-theme-dark {
- color: #F4F4FD;      
+ color: #F4F4FD; 
+ width: 264px;     
 }
 
 .bg-theme-dark {
-background-color: var(--background-color-theme-dark);  
+background-color: var(--background-color-theme-dark);
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .title {
@@ -106,6 +123,7 @@ margin-right: 76px;
 }
 
 .logo-theme-dark {
+display: inline-block;
 font-family: var(--secondary-font);
 font-weight: 800;
 font-size: 18px;
@@ -113,6 +131,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase; 
 color: var(--accent-page-color);
+margin-bottom: 16px;
 }
 
 .studio-logo-theme-dark {
@@ -164,6 +183,7 @@ color: var(--accent-color);
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .page-header-container {
     display: flex;
@@ -186,12 +206,14 @@ color: var(--accent-color);
 
 /* ===============HERO================= */
 .modal-service-btn {
+display: inline-block;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #FFFFFF;
+text-align: center;
 background-color: var(--accent-page-color);
 border-radius: 4px;
 border: none;
@@ -199,6 +221,8 @@ padding-top: 16px;
 padding-bottom: 16px;
 padding-left: 32px;
 padding-right: 32px;
+margin-top: 48px;
+margin-bottom: 188px;
 }
 
 .modal-service-btn:hover,
@@ -210,8 +234,12 @@ padding-right: 32px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     color: #FFFFFF; 
+    padding-top: 188px;
+}
+
+.hero {
+    text-align: center;
 }
 /* ===============/HERO================= */
 
@@ -221,6 +249,14 @@ padding-right: 32px;
     padding-bottom: 67px;
 }
 
+.features-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .features-description {
+    max-width: 264px;
+  }
 /* ===============/FEATURES================= */
 
 /* ================WORK EXAMPLES============= */
@@ -235,6 +271,16 @@ padding-right: 32px;
 .work-examples {
     padding-top: 53px;
     padding-bottom: 120px;
+}
+
+.work-examples-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.work-examples-list-item {
+    width: calc((100% - 48px) / 3);
 }
 /* ================/WORK EXAMPLES============= */
 
@@ -264,22 +310,21 @@ flex-basis: calc((100% - 72px) / 4);
     flex-wrap: wrap;
     gap: 24px;
 }
-/* .team-list-item:not(:nth-child(4n)) {
-    margin-right: 24px;
-} */
 
-/* .team-list-item:not(:nth-last-child(- n + 2)) {
-    margin-bottom: 24px;
-} */
-    
+.team-card-content-wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 /* ===============/TEAM================= */
-
 
 
 /* ===============PORTFOLIO-PAGE================= */
 
-/* ===============FILTERS================= */
+/* ===============FILTER BUTTONS================= */
 .filter-btn {
+display: flex;
+align-items: center;
+text-align: center;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -299,8 +344,46 @@ padding-right: 24px;
 .filter-btn:focus {
 color: #FFFFFF;
 background-color: var(--accent-color);
+border: 1px solid transparent;
 }
 
-/* ===============/FILTERS================= */
+.filters-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 168px;
+    margin-bottom: 72px;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.filters-list-item {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ===============/FILTER BUTTONS================= */
+
+/* ===============GALLERY================= */
+.gallery {
+padding-bottom: 120px;
+}
+
+.gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+.gallery-list-content-wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+/* ===============/GALLERY================= */
 
 /* ===============/PORTFOLIO-PAGE================= */
