@@ -151,6 +151,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--primary-text-color-theme-light);
 margin-left: 40px;
+padding: 24px 0 24px;
 }
 
 .menu-item-link:hover,
@@ -165,15 +166,22 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color-theme-light);
+margin-left: auto;
 }
 
 .contact {
     margin-left: auto;
+    display: flex;
+    gap: 40px;
 }
 
-.tel {
-margin-left: 40px;
+.contact-item:not(:last-child) {
+margin-right: 40px;
 }
+
+/* .tel {
+margin-left: 40px;
+} */
 
 .contact-item-link:hover,
 .contact-item-link:focus {
@@ -191,10 +199,6 @@ color: var(--accent-color);
 }
 
 .menu {
-    display: flex;
-}
-
-.contact {
     display: flex;
 }
 
