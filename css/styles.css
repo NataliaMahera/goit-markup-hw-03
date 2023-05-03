@@ -349,21 +349,12 @@ border: 1px solid transparent;
 
 .filters-list {
     display: flex;
-    gap: 24px;
+    column-gap: 24px;
     padding-top: 168px;
     padding-bottom: 72px;
     align-items: center;
     justify-content: center;
 }
- 
-/* .filters-list-item {
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-.filters-list-item:not(:last-child) {
-    margin-right: 24px;
-    }
 /* ===============/FILTER BUTTONS================= */
 
 /* ===============GALLERY================= */
@@ -375,11 +366,6 @@ padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-}
-
-.gallery-list-item {
-    margin-left: auto;
-    margin-right: auto;
     flex-basis: calc((100% - 48px) / 3);
 }
 
