@@ -210,7 +210,7 @@ color: var(--accent-color);
 
 /* ===============HERO================= */
 .modal-service-btn {
-display: inline-block;
+display: block;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -226,7 +226,8 @@ padding-bottom: 16px;
 padding-left: 32px;
 padding-right: 32px;
 margin-top: 48px;
-margin-bottom: 188px;
+min-width: 169px;
+height: 56px;
 }
 
 .modal-service-btn:hover,
@@ -239,18 +240,20 @@ margin-bottom: 188px;
     font-size: 56px;
     line-height: 1.07;
     color: #FFFFFF; 
-    padding-top: 188px;
-}
+    max-width: 496px;
+} */
 
 .hero {
     text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 /* ===============/HERO================= */
 
 /* ===============FEATURES================= */
 .features {
     padding-top: 120px;
-    padding-bottom: 67px;
+    padding-bottom: 120px;
 }
 
 .features-list {
@@ -306,6 +309,7 @@ margin-bottom: 188px;
 .team-list-item {
 background-color: var(--background-color-theme-light);
 flex-basis: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
@@ -318,6 +322,8 @@ flex-basis: calc((100% - 72px) / 4);
 .team-card-content-wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 /* ===============/TEAM================= */
 
@@ -353,16 +359,16 @@ border: 1px solid transparent;
 
 .filters-list {
     display: flex;
-    column-gap: 24px;
-    padding-top: 168px;
-    padding-bottom: 72px;
+    gap: 24px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 72px;
 }
 /* ===============/FILTER BUTTONS================= */
 
 /* ===============GALLERY================= */
 .gallery {
+padding-top: 96px;
 padding-bottom: 120px;
 }
 
